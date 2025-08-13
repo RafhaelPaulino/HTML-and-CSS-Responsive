@@ -1,0 +1,29 @@
+body {
+  background: #2a2a2a;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu {
+  background-color: rgba(0, 98, 255, 0.3);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 525px;
+  height: 50px;
+  align-items: center;
+  padding: 0 0 0 25px;
+  margin-top: 35px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+
+.menu #sign-up {
+  background: #0062FF;
+  padding: 0 30px;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
