@@ -5,6 +5,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .menu {
   background-color: rgba(0, 98, 255, 0.3);
   color: white;
@@ -19,11 +24,70 @@ body {
   border-radius: 20px;
 }
 
-.menu #sign-up {
+#sign-up {
   background: #0062FF;
   padding: 0 30px;
-  height: 100%;
   border-radius: 20px;
+  line-height: 50px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu a::after {
+  content: " ";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  padding: 55px;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-right: 50px;
+}
+
+#text h1 {
+  color: white;
+  font-size: 65px;
+}
+
+#text p {
+  color: #CACACA;
+  font-size: 18px;
+}
+
+.button {
+  background-color: #0062FF;
+  padding: 15px 30px;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  opacity: 0.7;
 }
